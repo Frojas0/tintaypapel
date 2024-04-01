@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinta y Papel | Catalogo</title>
     <link rel="stylesheet" href="./assets/style/global.css">
+    <link rel="stylesheet" href="./assets/style/catalogo.css">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Metamorphous&display=swap"
         rel="stylesheet">
+    <!-- se agregan los javascripts al final de la página, revisar si hay otras opciones -->
 </head>
 
 <body>
@@ -29,12 +31,23 @@
         </nav>
     </header>
     <main>
-        <p>catalogo</p>
+        <p>Busque ingresando título, o autor, en la API de Google Books</p>
+        <p>Ingrese las palabras de búsqueda:</p>
+        <p><input type="text" name="query" id="query_text" /></p>
+        <p><input type="button" value="BUSCAR EN GOOGLE BOOKS" id="btn_search" /></p>
+        
+        <!-- Acá se agregan los títulos que llegan como resultado de la búsqueda -->
+        <div id="output">
+            <!-- divs clase .results-box -->
+        </div>
     </main>
     <footer>
 
     </footer>
 </body>
+
 <script src="./assets/script/index.js"></script>
+<!-- Añadir catalogo.js para las funciones de búsqueda -->
+<script src="./assets/script/catalogo.js" type="text/javascript"></script>
 
 </html>
