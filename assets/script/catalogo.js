@@ -2,7 +2,7 @@ document.getElementById('btn_search').addEventListener('click', searchBooks);
 
 function searchBooks() {
     query = document.getElementById('query_text').value;
-    alert(query);
+    // alert(query);
     fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`)
     .then((res) => res.json())
     .then((data)=> {
@@ -14,7 +14,7 @@ function searchBooks() {
                     <img src=${book.volumeInfo.imageLinks.smallThumbnail}> <br>
                     <b>Nombre: </b> ${book.volumeInfo.title} <br>
                     <b>Autor/es: </b> ${book.volumeInfo.authors} <br>
-                    <a href=${book.volumeInfo.canonicalVolumeLink}><b>Ver este libro</b></a>
+                    <a href=${book.volumeInfo.canonicalVolumeLink} target="_blank"><b>Ver este libro</b></a>
                 </div>
             `;
         });
