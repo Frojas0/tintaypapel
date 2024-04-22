@@ -23,3 +23,7 @@ function searchBooks() {
     })
     .catch((error) => console.log(error));
 }
+
+document.getElementById('query_text').addEventListener('keypress', () => {
+    searchBooks();
+});

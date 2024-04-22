@@ -1,8 +1,16 @@
+section {
+    margin: 24px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: saddlebrown;
+}
+
 p {
     /* color: green; */
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     font-weight: bolder;
 }
+
 
 .results-box {
     display: inline-block;
