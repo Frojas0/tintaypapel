@@ -24,6 +24,11 @@ function searchBooks() {
     .catch((error) => console.log(error));
 }
 
-document.getElementById('query_text').addEventListener('keypress', () => {
-    searchBooks();
+document.getElementById('query_text').addEventListener('keydown', (evnt) => {
+    if (evnt.key === 'Enter'){
+        // alert("Buscando...");
+        searchBooks();
+    } /*else {
+        console.log('Key code: ' + evnt.key.toString());
+    }*/
 });
