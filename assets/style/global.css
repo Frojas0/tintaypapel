@@ -6,11 +6,18 @@
 
 }
 
-/* body {
+body {
     background-image: url('../images/fondo_principal.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-size: 100vh; */
+    background-attachment: fixed;
+
+}
+
+/* nav, .titulo {
+    position:fixed;
 } */
 
 nav {
@@ -18,6 +25,7 @@ nav {
     font-size: 1.2rem;
     justify-content: right;
     width: 100%;
+    text-align: center;
 }
 
 .titulo {
@@ -27,4 +35,11 @@ nav {
     background-color: #EB9C63;
     text-align: center;
     font-weight: bolder;
+    background-image: url('../images/banner1.jpg');
+}
+
+.titulo h1 {
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgba( 150, 150, 150, 50%);
 }

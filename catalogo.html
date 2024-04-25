@@ -18,11 +18,13 @@
 
 <body>
     <header>
-        <div class="titulo">Una aventura en Tinta y Papel</div>
+        <div class="titulo">
+            <h1>Una aventura en Tinta y Papel</h1>
+        </div>
         <nav>
             <li>
                 <a href="./index.html">Inicio</a>
-                <a href="./novedades.html">Novedades</a>
+                <!-- <a href="./novedades.html">Novedades</a>  -->
                 <a href="#">Catalogo Completo</a>
                 <a href="./tiendas.html">Tiendas Online</a>
                 <a href="./reseñas.html">Reseñas</a>
@@ -31,15 +33,17 @@
         </nav>
     </header>
     <main>
-        <p>Busque ingresando título, o autor, en la API de Google Books</p>
-        <p>Ingrese las palabras de búsqueda:</p>
-        <p><input type="text" name="query" id="query_text" /></p>
-        <p><input type="button" value="BUSCAR EN GOOGLE BOOKS" id="btn_search" /></p>
-        
-        <!-- Acá se agregan los títulos que llegan como resultado de la búsqueda -->
-        <div id="output">
-            <!-- divs clase .results-box -->
-        </div>
+        <section>
+            <p>Busque ingresando título, o autor, en la API de Google Books</p>
+            <p>Ingrese las palabras de búsqueda, presione ENTER para buscar:</p>
+            <p><input type="text" name="query" id="query_text" /></p>
+            <p><input type="button" value="BUSCAR EN GOOGLE BOOKS" id="btn_search" /></p>
+            
+            <!-- Acá se agregan los títulos que llegan como resultado de la búsqueda -->
+            <div id="output">
+                <!-- divs clase .results-box -->
+            </div>
+        </section>
     </main>
     <footer>
 
