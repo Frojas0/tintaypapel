@@ -27,3 +27,23 @@ p {
 .results-box a:hover {
     color: white;
 }
+.results-box img {
+    width:98%;
+}
+
+@media (max-width: 575px) {
+    .results-box { width:40%; }
+}
+@media (min-width: 576px) {
+    .results-box img { width:98%; }
+    .results-box { width:40%; }
+}
+
+@media (min-width: 768px) {
+    .results-box img { width:98%; }
+    .results-box { width:25%; }
+}
+
+@media (min-width: 992px) {
+    
+}
