@@ -1,0 +1,16 @@
+section {
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    margin: 2%;
+    padding: 2%;
+}
+
+section.blog-index {
+    background-color: rgba(255,255,255,0.4);
+}
+
+article {
+    background-color: chocolate;
+    margin: 4%;
+    padding: 4%;
+}
