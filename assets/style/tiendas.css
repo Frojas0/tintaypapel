@@ -1,0 +1,52 @@
+/* Estilo Normalizado */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+.navbarIcon {
+    height: 1rem;
+}
+
+
+/* Estilo temporal */
+body {
+    background-image: url('../images/fondo_principal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100vh; */
+    background-attachment: fixed;
+
+}
+
+/* nav, .titulo {
+    position:fixed;
+} */
+
+nav {
+    background-color: burlywood;
+    font-size: 1.2rem;
+    justify-content: right;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo {
+    font-family: "Metamorphous", serif;
+    font-size: 1.5rem;
+    display: block;
+    background-color: #EB9C63;
+    text-align: center;
+    font-weight: bolder;
+    background-image: url('../images/banner1.jpg');
+}
+
+.titulo h1 {
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgba(150, 150, 150, 50%);
+}
