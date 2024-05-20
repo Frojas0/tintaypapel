@@ -39,7 +39,12 @@ nav {
 }
 
 .titulo h1 {
-    border-radius: 8px;
+    /* border-radius: 8px; */
     padding: 8px;
     background-color: rgba( 150, 150, 150, 50%);
+}
+
+.titulo img {
+    height: 16%;
+    width: 16%;
 }
