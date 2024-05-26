@@ -31,20 +31,26 @@ nav {
 .titulo {
     font-family: "Metamorphous", serif;
     font-size: 1.5rem;
-    display: block;
+    display: flex;
     background-color: #EB9C63;
     text-align: center;
     font-weight: bolder;
     background-image: url('../images/banner1.jpg');
 }
+.base-blanca {
+    background-color: rgba( 150, 150, 150, 50%);
+    width: 100%;
+}
 
 .titulo h1 {
     /* border-radius: 8px; */
     padding: 8px;
-    background-color: rgba( 150, 150, 150, 50%);
+    /* background-color: rgba( 150, 150, 150, 50%); */
 }
 
 .titulo img {
     height: 16%;
     width: 16%;
+    /* display: inline-block; */
+    display: none;
 }
