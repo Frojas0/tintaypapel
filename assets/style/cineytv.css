@@ -1,5 +1,16 @@
+/* .contenedor{ */
+iframe {
+    display: inline-block;
+    background-color: saddlebrown;
+    border: 4px solid;
+    border-color:chocolate;
+    margin: 10px 10px 10px 10px;
+    padding: 16px;
+}
+
 @media (max-width: 575px) {
     .results-box { width:40%; }
+    iframe { width: 94%; }
 }
 @media (min-width: 576px) {
     .results-box img { width:98%; }
@@ -13,13 +24,4 @@
 
 @media (min-width: 992px) {
     
-}
-
-.contenedor{
-    display: inline-block;
-    background-color: saddlebrown;
-    border: 4px solid;
-    border-color:chocolate;
-    margin: 10px 10px 10px 10px;
-    padding: 2%;
 }
