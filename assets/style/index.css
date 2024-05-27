@@ -15,7 +15,7 @@
     --blanco: #ffffff;
 }
 
-/* HEADER */
+/* ---------- HEADER ---------- */
 header {
     min-height: 15vh;
 }
@@ -90,12 +90,14 @@ header {
     filter: invert(100%);
 }
 
-
-
 .icono {
     width: 8rem;
     margin-left: 1rem;
 }
+
+
+
+/* ---------- MAIN ---------- */
 
 section {
     border-radius: 16px;
@@ -117,4 +119,82 @@ article {
     background-color: chocolate;
     margin: 4%;
     padding: 4%;
+}
+
+
+
+
+/* ---------- FOOTER ---------- */
+footer {
+    position: relative;
+    width: 100%;
+    background: #000;
+    min-height: 50px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.footerBox {
+    width: 100%;
+}
+
+.fbox01,
+.fbox02,
+.fbox03 {
+    width: 12rem;
+}
+
+.fbox01 {
+    color: var(--verdeclaro);
+}
+
+.fspan {
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fbox02 img {
+    border-radius: 15px;
+    width: 5rem;
+}
+
+.fbox03 img {
+    width: 3rem;
+}
+
+
+.footer_ty p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--blanco);
+    font-weight: 400;
+}
+
+
+/* Footer media */
+@media screen and (max-width: 960px) {
+    .bannerIndex {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer_ty p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footerBox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fbox03 {
+        gap: 10px;
+    }
 }
