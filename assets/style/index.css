@@ -100,7 +100,7 @@ header {
 /* ---------- MAIN ---------- */
 
 section {
-    border-radius: 16px;
+    /* border-radius: 16px; */
     background-color: rgb(255, 255, 255);
     margin: 2%;
     padding: 2%;
@@ -126,10 +126,10 @@ article {
 
 /* ---------- FOOTER ---------- */
 footer {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    background: #000;
-    min-height: 50px;
+    background-color: var(--negro);
+    /* min-height: 50px; */
     padding: 10px 0px;
     display: flex;
     align-items: center;
@@ -139,16 +139,19 @@ footer {
 
 .footerBox {
     width: 100%;
+    margin: 0;
 }
 
 .fbox01,
 .fbox02,
 .fbox03 {
-    width: 12rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro);
 }
 
 .fbox01 {
-    color: var(--verdeclaro);
+    color: var(--marronclaro);
 }
 
 .fspan {
@@ -166,9 +169,12 @@ footer {
     width: 3rem;
 }
 
+.logoCaC {
+    width: 4rem !important;
+}
 
-.footer_ty p {
-    margin-top: 15px;
+.footerDisc p {
+    margin: 10px 5rem 0 5rem;
     font-size: 0.9rem;
     color: var(--blanco);
     font-weight: 400;
