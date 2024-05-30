@@ -39,6 +39,8 @@ function validarFormulario(){
 form_contacto.addEventListener('submit', (e)=>{
     if(validarFormulario()) {
         console.log("Campos validos -enviando");
+        alert("Su consulta/suscripción fue enviada.")
+        e.preventDefault();
     } else {
         e.preventDefault();
     }
