@@ -95,30 +95,31 @@ header {
     margin-left: 1rem;
 }
 
-.gallery{
+.gallery {
     display: grid;
     gap: 1rem;
-    
-    grid-template-columns: repeat(auto-fit, minmax(min(100%,20rem),1fr));
-    grid-template-rows: minmax(20rem,auto);
+
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    grid-template-rows: minmax(20rem, auto);
 }
 
-.contenedor{
+.contenedor {
     display: inline-block;
-    background-color:#EB9C63;
+    background-color: #EB9C63;
     border: 4px solid;
     border-color: chocolate;
     margin: 10px 10px 10px 10px;
     padding: 16px;
-} 
+}
 
-iframe{
+iframe {
     width: 100%;
-    height:auto ;
+    height: auto;
 }
 
 @media (max-width: 575px) {
-    .contenedor  {  width: 40%;
+    .contenedor {
+        width: 40%;
     }
 
     iframe {
@@ -141,3 +142,84 @@ iframe{
 }
 
 @media (min-width: 992px) {}
+
+/* ---------- FOOTER ---------- */
+footer {
+    /* position: relative; */
+    width: 100%;
+    background-color: var(--negro);
+    /* min-height: 50px; */
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 90px; */
+}
+
+.footerBox {
+    width: 100%;
+    margin: 0;
+}
+
+.fbox01,
+.fbox02,
+.fbox03 {
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro);
+}
+
+.fbox01 {
+    color: var(--marronclaro);
+}
+
+.fspan {
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fbox02 img {
+    border-radius: 15px;
+    width: 5rem;
+}
+
+.fbox03 img {
+    width: 3rem;
+}
+
+.logoCaC {
+    width: 4rem !important;
+}
+
+.footerDisc p {
+    margin: 10px 5rem 0 5rem;
+    font-size: 0.9rem;
+    color: var(--blanco);
+    font-weight: 400;
+}
+
+
+/* Footer media */
+@media screen and (max-width: 960px) {
+    .bannerIndex {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer_ty p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footerBox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fbox03 {
+        gap: 10px;
+    }
+}
