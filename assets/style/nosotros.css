@@ -177,6 +177,23 @@ footer {
   font-weight: 400;
 }
 
+/* Animación para el icono */
+.icono {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
 /* Footer media */
 @media screen and (max-width: 960px) {
