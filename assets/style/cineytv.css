@@ -95,6 +95,13 @@ header {
     margin-left: 1rem;
 }
 
+/* ---------- MAIN ---------- */
+main {
+    background-color: var(--grisclaro);
+    min-height: 70vw;
+}
+
+
 .gallery {
     display: grid;
     gap: 1rem;

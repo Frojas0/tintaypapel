@@ -90,11 +90,16 @@ header {
     filter: invert(100%);
 }
 
-
-
 .icono {
     width: 8rem;
     margin-left: 1rem;
+}
+
+
+/* ---------- MAIN ---------- */
+main {
+    background-color: var(--grisclaro);
+    min-height: 70vw;
 }
 
 section {
