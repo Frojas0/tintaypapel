@@ -9,13 +9,17 @@
 :root {
     --marron: #8F4A1F;
     --marronclaro: #B15C27;
-    --grisclaro: #e9e9e9;
+    --grisclaro: #f3f3f3;
     --grisoscuro: #333333;
     --negro: #000000;
     --blanco: #ffffff;
 }
 
-/* HEADER */
+body {
+    background-color: var(--grisclaro) !important;
+}
+
+/* ---------- HEADER ---------- */
 header {
     min-height: 15vh;
 }
@@ -90,31 +94,191 @@ header {
     filter: invert(100%);
 }
 
-
-
 .icono {
     width: 8rem;
     margin-left: 1rem;
 }
 
-section {
-    border-radius: 16px;
-    background-color: rgb(255, 255, 255);
-    margin: 2%;
-    padding: 2%;
+
+
+/* ---------- MAIN ---------- */
+main {
+    background-color: var(--grisclaro);
+    min-height: 80vw;
 }
 
-section.blog-title {
-    margin-top: 32px;
+/* -Mision- */
+.misionContainer {
+    width: 100%;
+    text-align: center;
 }
 
-section.blog-index {
-    background-color: rgba(255, 255, 255, 0.4);
+.misionContainer .misionIndex img {
+    margin-top: 2rem;
+    width: 12%;
+}
+
+.misionContainer .misionIndex p {
+    color: var(--grisoscuro);
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 4rem 0;
+}
+
+#spanImgText {
+    color: var(--marronclaro);
+    font-weight: bold;
+}
+
+.mission-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mission-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.mission-section ul {
+    list-style-type: none;
+    padding: 0;
+    /* border: solid 1px #007BFF; */
+    width: 50rem;
+}
+
+.mission-section li {
+    /* border: solid 1px black; */
+    width: 30rem;
+}
+
+.mission-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.mission-section ul li:before {
+    content: "•";
+    color: #007BFF;
+    /* Puedes cambiar el color del punto */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* -Contenedores- */
+.indexTitle {
+    font-size: larger;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.indexText {
+    /* width: 33rem; */
+}
+
+.secciónIndex {
+    width: 23rem;
+    height: 10rem;
+    border: solid 1px black;
+    padding: .5rem;
+}
+
+.infoContainer {
+    margin-bottom: 2rem;
 }
 
 
-article {
-    background-color: chocolate;
-    margin: 4%;
-    padding: 4%;
+/* ---------- FOOTER ---------- */
+footer {
+    /* position: relative; */
+    width: 100%;
+    background-color: var(--negro);
+    /* min-height: 50px; */
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 90px; */
+}
+
+.footerBox {
+    width: 100%;
+    margin: 0;
+}
+
+.fbox01,
+.fbox02,
+.fbox03 {
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro);
+}
+
+.fbox01 {
+    color: var(--marronclaro);
+}
+
+.fspan {
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fbox02 img {
+    border-radius: 15px;
+    width: 5rem;
+}
+
+.fbox03 img {
+    width: 3rem;
+}
+
+.logoCaC {
+    width: 4rem !important;
+}
+
+.footerDisc p {
+    margin: 10px 5rem 0 5rem;
+    font-size: 0.9rem;
+    color: var(--blanco);
+    font-weight: 400;
+}
+
+
+/* Footer media */
+@media screen and (max-width: 960px) {
+    .bannerIndex {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer_ty p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footerBox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fbox03 {
+        gap: 10px;
+    }
 }
