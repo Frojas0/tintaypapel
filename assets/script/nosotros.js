@@ -30,16 +30,27 @@ function validarCorreo() {
     return true;
 }
 
+function validarCondiciones() {
+    const acepta = document.getElementById("acepta_tyc").checked;
+    console.log("Acepta? " + acepta);
+    if (acepta === true) return true;
+    else {
+        alert("Por favor, acepte los términos y condiciones.");
+        return false;
+    }
+}
+
 function validarFormulario(){
     if (!validarCorreo()) return false;
     if (!validarNombre()) return false;
+    if (!validarCondiciones()) return false;
     return true;
 }
 
 form_contacto.addEventListener('submit', (e)=>{
     if(validarFormulario()) {
         console.log("Campos validos -enviando");
-        alert("Su consulta/suscripción fue enviada.")
+        alert("Su consulta/suscripción fue enviada con éxito!")
         e.preventDefault();
     } else {
         e.preventDefault();

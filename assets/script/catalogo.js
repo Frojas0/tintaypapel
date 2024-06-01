@@ -2,8 +2,10 @@ document.getElementById('btn_search').addEventListener('click', searchBooks);
 
 function searchBooks() {
     query = document.getElementById('query_text').value;
+    sanitized_query = query.replace(/ /g, "_");
+    console.log("query = " + sanitized_query);
     // alert(query);
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`)
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=${sanitized_query}`)
     .then((res) => res.json())
     .then((data)=> {
         // procesar el resultado de la búsqueda
